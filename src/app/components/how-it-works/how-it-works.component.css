@@ -8,7 +8,7 @@
   height: 93vh;
   width: 100vw;
 }
-.ht{
+ .ht{
     height : 60vh;
 
 }
@@ -21,7 +21,7 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: auto;
-}
+} 
 .text {
   width: 60%;
   font-size: 0.8rem;
