@@ -1,0 +1,56 @@
+*{
+    overflow-x: hidden;
+
+}
+.conatiner-fluid{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+  }
+  .cover {
+    /* display: block; */
+    width: 100vw;
+    height: 92vh;
+    max-width: 100%;
+    overflow: hidden;
+    /* max-height: 90%; */
+    margin-bottom: 20px;
+  }
+
+  .space{
+    overflow-x: hidden;
+    /* margin-left: 10%; */
+    text-align: center;
+    /* padding-left: 10%; */
+
+  }
+  .text {
+    width: 60%;
+    font-size: 0.8rem;
+    overflow: hidden;
+    
+  }
+
+  .text {
+    width: 60%;
+    font-size: 0.8rem;
+    overflow: hidden;
+    
+  }
+  .padding-0{
+    padding-right:0;
+    padding-left:0;
+    
+  }
+
+  div.vertical-line{
+    margin-top: 8%;
+    width: 1px;
+    background-color: black;
+    height: 270px;
+    float: right;
+    border: 2px ridge black ;
+    border-radius: 2px;
+    margin-left: 10%;
+  }
