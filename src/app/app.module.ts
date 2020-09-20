@@ -10,6 +10,11 @@ import { HowItWorksComponent } from './components/how-it-works/how-it-works.comp
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
 import { ContactUsComponent } from './components/contact-us/contact-us.component';
+import { ServicesLinkComponent } from './components/services-link/services-link.component';
+import { PersonalEventsComponent } from './components/personal-events/personal-events.component';
+import { OrganizationalComponent } from './components/organizational/organizational.component';
+import { EducationalComponent } from './components/educational/educational.component';
+import { TourstravelsComponent } from './components/tourstravels/tourstravels.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +25,12 @@ import { ContactUsComponent } from './components/contact-us/contact-us.component
     PortfolioComponent,
     HeaderComponent,
     AboutUsComponent,
-    ContactUsComponent
+    ContactUsComponent,
+    ServicesLinkComponent,
+    PersonalEventsComponent,
+    OrganizationalComponent,
+    EducationalComponent,
+    TourstravelsComponent,
   ],
   imports: [
     BrowserModule,
