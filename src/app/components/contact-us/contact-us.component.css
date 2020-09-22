@@ -32,17 +32,17 @@
   .clr{
     background-color: #fff3e0;
   }
-  .inner {
+  /* .inner {
       background-color:white;
       width: 80% ;
       margin-left: auto;
       margin-right: auto;
-  }
+  } */
 
-  input.ng-invalid.ng-touched {
+  /* input.ng-invalid.ng-touched {
       border: 1px solid red;
   }
 
   textarea.ng-invalid.ng-touched {
     border: 1px solid red;
-}
+} */

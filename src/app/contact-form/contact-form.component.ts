@@ -9,7 +9,7 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 export class ContactFormComponent implements OnInit {
   type = [ 'Personal', 'Organizational', 'Educational', 'Extra-Curricular', 'Tours'];
   contactForm : FormGroup;
-  phonePattern = '^((\+){0,1}91(\s){0,1}(\-){0,1}(\s){0,1}){0,1}98(\s){0,1}(\-){0,1}(\s){0,1}[1-9]{1}[0-9]{7}$';
+  phonePattern = "^((\\+91-?)|0)?[0-9]{10}$";
   emailPattern = "^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$";
 
   constructor() { }
@@ -17,9 +17,8 @@ export class ContactFormComponent implements OnInit {
   ngOnInit() {
     this.contactForm = new FormGroup ({
       'name': new FormControl(null , Validators.required),
-      'email': new FormControl('', [Validators.required, Validators.email]),
-      //'phone': new FormControl('', [Validators.required, Validators.pattern(this.phonePattern)]),
-      'phone': new FormControl(null , Validators.required ),
+      'email': new FormControl('', [Validators.required, Validators.pattern(this.emailPattern)]),
+      'phone': new FormControl('', [Validators.required, Validators.pattern(this.phonePattern)]),
       'eventType': new FormControl(null),
       'eventDetails': new FormControl(null),
 
@@ -27,10 +26,23 @@ export class ContactFormComponent implements OnInit {
     })
 
   }
-  onSubmit(){
-    
-    console.log(this.contactForm.value);
+  validateAllFormFields(formGroup: FormGroup) {         
+  Object.keys(formGroup.controls).forEach(field => {  
+    const control = formGroup.get(field);             
+    if (control instanceof FormControl) {             
+      control.markAsTouched({ onlySelf: true });
+    } else if (control instanceof FormGroup) {        
+      this.validateAllFormFields(control);            
+    }
+  });
+}
+  
+  
+  onSubmit() {
+    if (this.contactForm.valid) {
+      console.log(this.contactForm.value);
+    } else {
+      this.validateAllFormFields(this.contactForm); //{7}
+    }
   }
-  
-  
 }
