@@ -10,7 +10,11 @@ export class ContactFormComponent implements OnInit {
 
   type = [ 'Personal', 'Organizational', 'Educational', 'Extra-Curricular', 'Tours'];
   contactForm : FormGroup;
+<<<<<<< HEAD
+  phonePattern = "^((\\+91-?)|0)?[0-9]{10}$";
+=======
   phonePattern = `^((\\+91-?)|0)?[0-9]{10}$`;
+>>>>>>> ad32f370900ad2bd3f8bb6883d4bdc9fcd1ccfbc
   emailPattern = "^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$";
 
   constructor() { }
@@ -27,11 +31,23 @@ export class ContactFormComponent implements OnInit {
       
     })
   }
-
-  onSubmit(){
-    
-    console.log(this.contactForm.value);
+  validateAllFormFields(formGroup: FormGroup) {         
+  Object.keys(formGroup.controls).forEach(field => {  
+    const control = formGroup.get(field);             
+    if (control instanceof FormControl) {             
+      control.markAsTouched({ onlySelf: true });
+    } else if (control instanceof FormGroup) {        
+      this.validateAllFormFields(control);            
+    }
+  });
+}
+  
+  
+  onSubmit() {
+    if (this.contactForm.valid) {
+      console.log(this.contactForm.value);
+    } else {
+      this.validateAllFormFields(this.contactForm); //{7}
+    }
   }
-  
-  
 }
