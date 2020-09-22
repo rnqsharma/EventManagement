@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, DoCheck, ElementRef, OnChanges, OnInit, ViewChild } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
@@ -7,24 +7,29 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
   styleUrls: ['./contact-form.component.css']
 })
 export class ContactFormComponent implements OnInit {
+
   type = [ 'Personal', 'Organizational', 'Educational', 'Extra-Curricular', 'Tours'];
   contactForm : FormGroup;
+<<<<<<< HEAD
   phonePattern = "^((\\+91-?)|0)?[0-9]{10}$";
+=======
+  phonePattern = `^((\\+91-?)|0)?[0-9]{10}$`;
+>>>>>>> ad32f370900ad2bd3f8bb6883d4bdc9fcd1ccfbc
   emailPattern = "^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$";
 
   constructor() { }
 
   ngOnInit() {
+
     this.contactForm = new FormGroup ({
       'name': new FormControl(null , Validators.required),
-      'email': new FormControl('', [Validators.required, Validators.pattern(this.emailPattern)]),
+      'email': new FormControl('', [Validators.required, Validators.email]),
       'phone': new FormControl('', [Validators.required, Validators.pattern(this.phonePattern)]),
+      // 'phone': new FormControl(null , Validators.required),
       'eventType': new FormControl(null),
       'eventDetails': new FormControl(null),
-
       
     })
-
   }
   validateAllFormFields(formGroup: FormGroup) {         
   Object.keys(formGroup.controls).forEach(field => {  
