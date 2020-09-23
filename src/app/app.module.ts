@@ -17,6 +17,7 @@ import { EducationalComponent } from './components/educational/educational.compo
 import { TourstravelsComponent } from './components/tourstravels/tourstravels.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { TestimonialComponent } from './components/testimonial/testimonial.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { TestimonialComponent } from './components/testimonial/testimonial.compo
     TourstravelsComponent,
     ContactFormComponent,
     TestimonialComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
