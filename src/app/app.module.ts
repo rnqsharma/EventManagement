@@ -16,6 +16,8 @@ import { OrganizationalComponent } from './components/organizational/organizatio
 import { EducationalComponent } from './components/educational/educational.component';
 import { TourstravelsComponent } from './components/tourstravels/tourstravels.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
+import { TestimonialComponent } from './components/testimonial/testimonial.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +35,8 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
     EducationalComponent,
     TourstravelsComponent,
     ContactFormComponent,
+    TestimonialComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

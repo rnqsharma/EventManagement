@@ -6,6 +6,9 @@
     margin: 0;
     overflow: hidden;
   }
+  .bgImage{
+     max-height: 92vh;
+  }
 
 
 #img1 {
