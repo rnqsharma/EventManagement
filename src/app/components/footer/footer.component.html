@@ -5,19 +5,18 @@
 
 				<a  [routerLink]= "['/']"><span><img src='../../../assets/1.png' class='logo'></span></a>
 
-				<!-- <p class="footer-links">
-					<a href="#" class="link-1">Home</a>
+				<p class="footer-links">
+                    
+                    <a routerLink='personalevent' class="link-1">Personal Events</a>
 					
-					<a href="#">Blog</a>
-				
-					<a href="#">Pricing</a>
-				
-					<a href="#">About</a>
-					
-					<a href="#">Faq</a>
-					
-					<a href="#">Contact</a>
-				</p> -->
+					<a [routerLink]="['organizationalevents']" routerLinkActive="router-link-active" >Organizational</a>
+        
+        
+            <a [routerLink]="['educationalevents']" routerLinkActive="router-link-active" >Educational</a>
+        
+            <a [routerLink]="['toursandtravels']" routerLinkActive="router-link-active" >Tours & Travels</a>
+                
+        </p> 
                 <div class=' mt-3'>
                     <p class="footer-company-name">Company Name © 2015</p>
                 </div>
