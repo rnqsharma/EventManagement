@@ -1,0 +1,88 @@
+*{
+    overflow-x: hidden;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+/* .conatiner-fluid{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+  } */
+  .cover {
+    /* display: block; */
+    width: 100vw;
+    max-height: 100vh;
+    max-width: 100%;
+    overflow: hidden;
+    /* max-height: 90%; */
+    margin-bottom: 20px;
+  }
+
+  .space{
+    overflow-x: hidden;
+    /* margin-left: 10%; */
+    text-align: center;
+    /* padding-left: 10%; */
+
+  }
+  .text {
+    width: 60%;
+    font-size: 0.8rem;
+    overflow: hidden;
+    
+  }
+  .texts {
+    width: 75%;
+    font-size: 0.8rem;
+    overflow:hidden;
+    
+  }
+  .text {
+    width: 60%;
+    font-size: 0.8rem;
+    overflow: hidden;
+    
+  }
+  
+
+  #weddingImage {
+    filter: brightness(60%) blur(2px);
+    /* filter: blur(2px); */
+  /* -webkit-filter: blur(2px); */
+}
+
+#imageContainer {
+    position: relative;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Montserrat', sans-serif;
+  font-size: .8 rem;
+  color: white;
+  letter-spacing: 4px;
+  font-weight: bold;
+    /* text-decoration-color: white; */
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.imgDiv {
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    position: relative;
+    z-index: -9999;
+}
+
+
+/* cards */

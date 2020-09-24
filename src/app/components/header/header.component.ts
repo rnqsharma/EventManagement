@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, OnInit } from '@angular/core';
+import {  Component, OnInit } from '@angular/core';
 import $ from 'jquery';
 declare var $: any;
 
@@ -8,35 +8,35 @@ declare var $: any;
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css']
 })
-export class HeaderComponent implements OnInit , AfterViewInit {
+export class HeaderComponent implements OnInit  {
  
 
   constructor() { }
-  ngAfterViewInit(): void {
-    $(document).ready(function () {
+  // ngAfterViewInit(): void {
+  //   $(document).ready(function () {
   
-      'use strict';
+  //     'use strict';
       
-       var c, currentScrollTop = 0,
-           navbar = $('nav');
+  //      var c, currentScrollTop = 0,
+  //          navbar = $('nav');
     
-       $(window).scroll(function () {
-          var a = $(window).scrollTop();
-          var b = navbar.height();
+  //      $(window).scroll(function () {
+  //         var a = $(window).scrollTop();
+  //         var b = navbar.height();
          
-          currentScrollTop = a;
+  //         currentScrollTop = a;
          
-          if (c < currentScrollTop && a > b + b) {
-            navbar.addClass("scrollUp");
-          } else if (c > currentScrollTop && !(a <= b)) {
-            navbar.removeClass("scrollUp");
-          }
-          c = currentScrollTop;
-      });
+  //         if (c < currentScrollTop && a > b + b) {
+  //           navbar.addClass("scrollUp");
+  //         } else if (c > currentScrollTop && !(a <= b)) {
+  //           navbar.removeClass("scrollUp");
+  //         }
+  //         c = currentScrollTop;
+  //     });
       
-    });
-    throw new Error('Method not implemented.');
-  }
+  //   });
+  //   throw new Error('Method not implemented.');
+  // }
 
   ngOnInit(): void {
     

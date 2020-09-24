@@ -10,6 +10,7 @@ export class PersonalEventsComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    
   }
 
 }
