@@ -1,16 +1,35 @@
 <div>
-    <ul class="serv-links">
-        <li>
-            <a routerLink='personalevent'>Personal Events</a>
+    <ul class="serv-links ">
+        <li class='zoom '>
+            <a routerLink='personalevent'>
+                <span>
+                    <img src='../../../assets/personal.png' class='logo '>
+                </span>
+                Personal Events
+            </a>
         </li>
-        <li>
-            <a [routerLink]="['organizationalevents']" routerLinkActive="router-link-active" >Organizational</a>
+        <li class='zoom'>
+            <a [routerLink]="['organizationalevents']" routerLinkActive="router-link-active">
+                <span><img src='../../../assets/organizational.png' class='logo '>
+                </span>
+                Organizational Events
+            </a>
         </li>
-        <li>
-            <a [routerLink]="['educationalevents']" routerLinkActive="router-link-active" >Educational</a>
+        <li class='zoom'>
+            <a [routerLink]="['educationalevents']" routerLinkActive="router-link-active">
+                <span>
+                    <img src='../../../assets/corporate.png' class='logo '>
+                </span>
+                Corporate Events
+            </a>
         </li>
-        <li>
-            <a [routerLink]="['toursandtravels']" routerLinkActive="router-link-active" >Tours & Travels</a>
+        <li class='zoom'>
+            <a [routerLink]="['toursandtravels']" routerLinkActive="router-link-active">
+                <span>
+                    <img src='../../../assets/travel.png' class='logo'>
+                </span>
+                Tours & Travels
+            </a>
         </li>
     </ul>
 </div>
