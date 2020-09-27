@@ -9,9 +9,11 @@
     height : 10%
 }
 
-
+.links{
+	color:  lightseagreen;
+}
 .footer-distributed{
-	background: #666;
+	background: white;
 	/* box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12); */
 	box-sizing: border-box;
 	width: 100%;
@@ -37,7 +39,7 @@
 /* The company logo */
 
 .footer-distributed h3{
-	color:  #ffffff;
+	color:  black;
 	font: normal 36px 'Open Sans', cursive;
 	margin: 0;
 }
@@ -49,7 +51,7 @@
 /* Footer links */
 
 .footer-distributed .footer-links{
-	color:  #ffffff;
+	color:  black;
 	margin: 20px 0 12px;
 	padding: 0;
 }
@@ -63,7 +65,7 @@
 }
 
 .footer-distributed .footer-company-name{
-	color:  #222;
+	color: black;
 	font-size: 14px;
 	font-weight: normal;
 	margin: 0;
@@ -76,8 +78,8 @@
 }
 
 .footer-distributed .footer-center i{
-	background-color:  #33383b;
-	color: #ffffff;
+	background-color:  white;
+	color: black;
 	font-size: 25px;
 	width: 38px;
 	height: 38px;
@@ -95,7 +97,7 @@
 
 .footer-distributed .footer-center p{
 	display: inline-block;
-	color: #ffffff;
+	color: black;
   font-weight:400;
 	vertical-align: middle;
 	margin:0;
@@ -118,7 +120,7 @@
   font-weight:300;
   font-size: 20px;
   left: 0;
-  color: #fff;
+  color: black;
   display: inline-block;
   padding-right: 5px;
 }
@@ -139,15 +141,16 @@
 
 .footer-distributed .footer-company-about{
 	line-height: 20px;
-	color:  #92999f;
+	color:  black;
 	font-size: 13px;
 	font-weight: normal;
 	margin: 0;
+	
 }
 
 .footer-distributed .footer-company-about span{
 	display: block;
-	color:  #ffffff;
+	color:  black;
 	font-size: 14px;
 	font-weight: bold;
 	margin-bottom: 20px;
@@ -166,16 +169,13 @@
 	border-radius: 2px;
 
 	font-size: 20px;
-	color: #ffffff;
+	color: black;
 	text-align: center;
 	line-height: 35px;
 
 	margin-right: 3px;
 	margin-bottom: 5px;
 }
-
-
-
 
 .logos{
     width: 40px;
@@ -201,7 +201,7 @@
 	.footer-distributed .footer-right{
 		display: block;
 		width: 100%;
-		margin-bottom: 40px;
+		/* margin-bottom: 20px; */
 		text-align: center;
 	}
 
@@ -209,4 +209,15 @@
 		margin-left: 0;
 	}
 
+	/* .footer-center{
+		margin-top: 10px;
+	} */
+
+	.footer-company-name{
+		display: none;
+
+	}
+
 }
+
+
