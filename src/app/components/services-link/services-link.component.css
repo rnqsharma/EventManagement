@@ -12,7 +12,8 @@ div {
     padding-top: 10px;
     display: flex;
     justify-content: space-around;
-    width: 80%;
+    width: 100%;
+
     font-family: 'Montserrat', sans-serif;
     align-items: center;
 }
@@ -40,5 +41,34 @@ div {
 .zoom:hover {
     transform: scale(1.1); 
   }
-  
-  
+
+  /* @media only screen and (max-width: 600px) {
+
+  } */
+
+  @media (max-width: 600px) {
+.serv-links {
+    padding-top: 10px;
+    display: block;
+    justify-content: space-around;
+    width: 100%;
+
+    font-family: 'Montserrat', sans-serif;
+    align-items: center;
+}
+   
+}
+/* 
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    .serv-links {
+        padding-top: 10px;
+        display: block;
+        justify-content: space-around;
+        width: 100%;
+    
+        font-family: 'Montserrat', sans-serif;
+        align-items: center;
+    }
+
+} */
+
