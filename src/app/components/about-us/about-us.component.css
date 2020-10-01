@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
 *{
     overflow-x: hidden;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-
+    font-family: 'Montserrat', sans-serif;
 }
 /* .conatiner-fluid{
     box-sizing: border-box;
@@ -58,7 +60,23 @@
     background-color: black;
     height: 270px;
     float: right;
-    border: 2px ridge black ;
-    border-radius: 2px;
+    border: 0.5px ridge black ;
+    border-radius: 1px;
     margin-left: 10%;
+    /* padding-right: 2px; */
+  }
+
+  .aboutHeading {
+    font-weight: bold;
+  }
+
+  .leftTitle {
+    font-weight: bolder;
+    letter-spacing: 2px;
+    padding-top: 10px;
+  }
+
+
+  @media only screen and (min-width: 300px) and (max-width: 768px) {
+    
   }

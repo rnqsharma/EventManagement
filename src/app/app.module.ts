@@ -18,7 +18,8 @@ import { TourstravelsComponent } from './components/tourstravels/tourstravels.co
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { TestimonialComponent } from './components/testimonial/testimonial.component';
 import { FooterComponent } from './components/footer/footer.component';
-
+import { FooterResponsive } from './components/footerresponsive/footerresponsive.component';
+ 
 @NgModule({
   declarations: [
     AppComponent,
@@ -37,6 +38,7 @@ import { FooterComponent } from './components/footer/footer.component';
     ContactFormComponent,
     TestimonialComponent,
     FooterComponent,
+    FooterResponsive
   ],
   imports: [
     BrowserModule,

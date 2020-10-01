@@ -5,16 +5,20 @@
   }
 
 .image{
-  height: 93vh;
+  max-height: 100vh;
   width: 100vw;
 }
  .ht{
     height : 60vh;
+    margin-bottom: 10px;
+    /* margin-bottom: 25px; */
+    
 
 }
 .mar{
     margin-top: 50px;
-    margin-bottom: auto;
+    margin-bottom: 20px;
+    margin-left: auto;
 }
 .mar1{
     margin-top: 18%;
@@ -26,11 +30,13 @@
   width: 60%;
   font-size: 0.8rem;
   overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
   
 }
 .padding{
     margin-top: 25%;
-    margin-left: 25%;
+    /* margin-left: 25%; */
 }
 
 .padding-0{
@@ -59,26 +65,54 @@
 
 
 
+@media only screen and (max-width: 374px) { 
+  .ht{
+    
+    margin-bottom: 9rem;
 
-
-
-
-/* 
-.fa-code{
-  color: #e54d26;
-  font-size: 4rem;
-  margin:1rem;
 }
-.fa-bold{
-  color: #563d7c;
-  font-size: 4rem;
-  margin:1rem;
+
+ }
+
+ @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation : portrait) { 
+  .ht{
+    
+    margin-bottom: 5rem;
+
 }
-.fa-css3{
-  color: #2163af;
-  font-size: 4rem;
-  margin:1rem;
 }
-.padding{
-  padding-bottom: 2rem;
-} */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 375px) and  (max-width: 600px) {
+  .ht{
+    height : 60vh;
+    
+
+}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 601px) {
+  .ht{
+    height: 60vh ;
+    margin-bottom: 250px;
+  }
+
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .ht{
+    height : 40vh;
+  }
+
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  
+  .ht{
+    height : 40vh;
+  }
+
+}
