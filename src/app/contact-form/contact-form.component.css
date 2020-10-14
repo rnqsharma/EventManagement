@@ -1,13 +1,76 @@
-.container {
+.container-fluid {
     margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: -12%;
   }
   input.ng-invalid.ng-touched {
     border: 1px solid red;
   }
 
+  .imgContainer {
+    /* position: absolute; */
+  }
 
+  .contactimage {
+    /* position: absolute; */
+    width: 50vw;
+    height: 60vh;
+  }
+
+  .formClass {
+    /* position: relative; */
+    width: 500px;
+    background-color: rgba(255, 255, 255, 255);
+    /* filter: opacity(.4); */
+    /* height: 200px; */
+  }
+
+  .outerDiv {
+    background-color: white;
+    filter: opacity(.4);
+
+  }
+
+  .eventType {
+    margin-left: 10px;
+  }
+
+  @media only screen and (min-width: 300px) and (max-width: 700px) {
+    .contactimage {
+      display: none;
+    }
+    
+    .container-fluid {
+      /* margin: auto; */
+      margin-left: -40%;
+      /* margin-right: 50%; */
+    }
+
+    .eventType {
+      margin-left: 5px;
+    }
+
+    .formClass {
+      font-size: small;
+    }
+
+    input::-webkit-input-placeholder {
+      font-size: 12px;
+      line-height: 3;
+  }
+
+  form {
+    width: 200px;
+  }
+    
+  }
+
+
+  /* https://codepen.io/lucasyem/pen/ZEEYKdj */
   /* textarea.ng-invalid.ng-touched {
   border: 1px solid red;
   } */
 
   /* && contactForm.get('name').touched */
+
+  /* col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2 */

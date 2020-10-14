@@ -1,69 +1,66 @@
-<div class="container">
+<div class="container-fluid">
+
     <div class="row">
-        <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
-            <form [formGroup] ="contactForm" (ngSubmit) = "onSubmit()">
-                
-                <!-- <div class="row"> -->
+    <div class="col imgContainer">
+        <img class='contactimage img-fluid' src="../../assets/images/contactImage.jpg" />
+    </div>
+    
+            <div class="col formClass col-sm-offset-1 col-md-offset-2">
+                <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+
+                    <!-- <div class="row"> -->
                     <div class="form-group">
                         <label for="name">NAME<span class='text-danger'>*</span></label>
-                        <input 
-                        type="text" 
-                        id="name" 
-                        formControlName="name"
-                        class="form-control"
-                        placeholder="Enter Your Name">
-                        <span *ngIf = "!contactForm.get('name').valid && contactForm.get('name').touched" class='help-block'>
+                        <input type="text" id="name" formControlName="name" class="form-control"
+                            placeholder="Enter Your Name">
+                        <span *ngIf="!contactForm.get('name').valid && contactForm.get('name').touched"
+                            class='help-block'>
                             Please enter a valid name!
                         </span>
                     </div>
-                    
+
                     <div class="form-group">
                         <label for="phone">PHONE<span class='text-danger'>*</span></label>
-                        <input 
-                        type="text"
-                         id="phone"
-                         formControlName="phone"
-                         class="form-control"
-                         placeholder="Enter Your Contact Number">
-                         <span *ngIf = "!contactForm.get('phone').valid && contactForm.get('phone').touched" class='help-block'>
+                        <input type="text" id="phone" formControlName="phone" class="form-control"
+                            placeholder="Enter Your Phone Number">
+                        <span *ngIf="!contactForm.get('phone').valid && contactForm.get('phone').touched"
+                            class='help-block'>
                             Please enter a valid Phone Number!
                         </span>
-                        
-                    <!-- </div> -->
-    
 
-                </div>
-               
-                <div class="form-group">
-                    <label for="email">EMAIL<span class='text-danger'>*</span></label>
-                    <input 
-                    type="text" 
-                    id="email" 
-                    formControlName="email"
-                    class="form-control"
-                    placeholder="Enter Your Email">
-                    <span *ngIf = "!contactForm.get('email').valid && contactForm.get('email').touched" class='help-block'>
-                        Please enter a valid email!
-                    </span>
-                </div>
+                        <!-- </div> -->
 
 
-                <div class="form-group ">
-                    <label for="type">EVENT TYPE </label>
-                    <select  formControlName="eventType" class='ml-3' >
-                        <!-- <option value="" disabled selected hidden>Please Choose...</option> -->
-                        <option [ngValue]="null" selected disabled> Select </option>
-                        <option *ngFor="let t of type">{{t}}</option>
-                    </select>
-                </div>
+                    </div>
 
-                <div class="form-group">
-                    <label for="more"> Tell Us More About Your Event</label>
-                    <textarea id='more' rows=2  class="form-control" formControlName="eventDetails"> </textarea>
-                </div>
+                    <div class="form-group">
+                        <label for="email">EMAIL<span class='text-danger'>*</span></label>
+                        <input type="text" id="email" formControlName="email" class="form-control"
+                            placeholder="Enter Your Email">
+                        <span *ngIf="!contactForm.get('email').valid && contactForm.get('email').touched"
+                            class='help-block'>
+                            Please enter a valid email!
+                        </span>
+                    </div>
 
-                <button class="btn btn-primary" type="submit">Submit</button>
-            </form>
-        </div>
+
+                    <div class="form-group ">
+                        <label for="type">EVENT TYPE </label>
+                        <select formControlName="eventType" class='eventType'>
+                            <!-- <option value="" disabled selected hidden>Please Choose...</option> -->
+                            <option [ngValue]="null" selected disabled> Select </option>
+                            <option *ngFor="let t of type">{{t}}</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="more"> Tell Us More About Your Event</label>
+                        <textarea id='more' rows=2 class="form-control" formControlName="eventDetails"> </textarea>
+                    </div>
+
+                    <button class="btn btn-primary" type="submit">Submit</button>
+                </form>
+            </div>
+
     </div>
 </div>
